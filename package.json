@@ -1,0 +1,28 @@
+{
+   "name": "backendassignment",
+   "version": "0.0.1",
+   "description": "Assingment",
+   "type": "module",
+   "devDependencies": {
+      "@types/cors": "^2.8.17",
+      "@types/express": "^4.17.21",
+      "@types/node": "^16.11.10",
+      "ts-node": "10.9.1",
+      "typescript": "4.5.2"
+   },
+   "dependencies": {
+      "backendassignment": "file:",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.5",
+      "express": "^4.19.2",
+      "mysql": "^2.18.1",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "0.3.20"
+   },
+   "scripts": {
+      "build": "tsc",
+      "serve": "node build/index.js",
+      "start": "node --loader ts-node/esm src/index.ts",
+      "typeorm": "typeorm-ts-node-esm"
+   }
+}

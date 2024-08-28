@@ -24,6 +24,12 @@ router.get("/:iata_code", async (req: Request, res: Response) => {
             country: true
         }
     })
+
+if (result === null) {
+    return res.status(404).json({ message: "Airport not found" });
+}
+
+
     res.json({
         airport: {
             id: result.id,
